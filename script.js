@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const nome = document.getElementById("nome").value;
         const nota1 = parseFloat(document.getElementById("nota1").value);
         const nota2 = parseFloat(document.getElementById("nota2").value);
+         const nota3 = parseFloat(document.getElementById("nota3").value);
 
         // Validação dos campos
         if (!nome || isNaN(nota1) || isNaN(nota2)) {
@@ -28,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <td>${nome}</td>
             <td>${nota1}</td>
             <td>${nota2}</td>
+             <td>${nota3}</td>
             <td>${media.toFixed(1)}</td>
             <td>${status}</td>
         `;
