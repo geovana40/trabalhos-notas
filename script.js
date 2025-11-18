@@ -8,16 +8,16 @@ document.addEventListener("DOMContentLoaded", () => {
         const nome = document.getElementById("nome").value;
         const nota1 = parseFloat(document.getElementById("nota1").value);
         const nota2 = parseFloat(document.getElementById("nota2").value);
-         const nota3 = parseFloat(document.getElementById("nota3").value);
+        const nota3 = parseFloat(document.getElementById("nota3").value);
 
         // Validação dos campos
-        if (!nome || isNaN(nota1) || isNaN(nota2)) {
+        if (!nome || isNaN(nota1) || isNaN(nota2) || isNaN(nota3)) {
             alert("Por favor, preencha todos os campos corretamente.");
             return;
         }
 
         // Calculando a média
-        const media = (nota1 + nota2) / 2;
+        const media = (nota1 + nota2 + nota3) / 2;
         const status = media >= 6 ? "Aprovado" : "Reprovado";
         const statusClass = media >= 6 ? "aprovado" : "reprovado";
 
